@@ -18,7 +18,9 @@ using namespace std;
 //Execution Begins Here!
 int main(int argc, char** argv){
     
-    //Declare and initialize variables
+    //    //Exit stage right!   
+    return 0;
+}Declare and initialize variables
     float oneAcr= 43560; //One Acre converted to Square Feet (ft^2)
     float trcLnd= 389767; //Tract of Land Owned (ft^2)
     float trcAcr; //Declared Variables
@@ -29,9 +31,7 @@ int main(int argc, char** argv){
     //Output the Results
     cout<<"Amount of Acres in Tract Owned= " <<trcAcr<<endl;
     
-    //Exit stage right!   
-    return 0;
-}
+
 
     
     
