@@ -21,19 +21,25 @@ using namespace std;
 int main(int argc, char** argv){
 
     //Declare and Initialize Variables
-    char mnth1, mnth2, mnth3;
+    string mnth1;
+    string mnth2;
+    string mnth3;
     float avgRn;
     
     //Input a Month
-    cout<<"Enter Months to be Calculated ";
+    cout<<"Enter 1st Month to be Calculated ";
     cin>>mnth1;
+    cout<<"Enter 2nd Month to be Calculated ";
     cin>>mnth2;
+    cout<<"Enter 3rd Month to be Calculated ";
     cin>>mnth3;
+    cout<<""<<mnth1<<mnth2<<mnth3<<endl;
     
+    //Input Each Months Average
     //Output the Average
     
     avgRn = (mnth1+mnth2+mnth3)/3.0;
-    cout<<"The Average Rainfall for " <<mnth1<<mnth2<<mnth3<<avgRn<<endl;
+    cout<<"The Average Rainfall for= " <<avgRn<<endl;
     
    
        //Exit stage right!   
