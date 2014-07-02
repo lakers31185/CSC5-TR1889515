@@ -5,31 +5,30 @@
  * Purpose: Gaddis 7thEd Chap3 Prob2 staSeat
  */
 
-
 //System Library
 #include <iostream>
 #include <iomanip>
 #include <string>
 using namespace std;
 
-
 //User Defined Libraries
 
 
 //Global Constants
 
-
 //Function Prototypes
-
 
 //Execution Begins Here!
 int main(int argc, char** argv){
 
+//Declare and Initialize Variables
 
-    //Declare and Initialize Variables
+    //Inputs
     string mnth1, mnth2, mnth3;  //Months to be Calculated
     float totRn1, totRn2, totRn3; //Total Rainfall for Each Month
-    float avgRn; //
+    
+    //Outputs
+    float avgRn;                //Average Total Rainfall
     
     //Input a Month
     cout<<"Enter 1st Month to be Calculated ";
@@ -48,14 +47,13 @@ int main(int argc, char** argv){
     cout<<"Enter 1st Months Rainfall ";
     cin>>totRn3;
     
-    //Output the Average
+    //Calculate the Average
     avgRn = (totRn1+totRn2+totRn3)/3.0;
+    
+    //Display the Average
     cout<<fixed<<setprecision(2);
     cout<<"The Average Rainfall for All 3 Months= " <<avgRn<<endl;
     
-   
-       //Exit stage right!   
+   //Exit stage right!   
     return 0;
 }
-
-
