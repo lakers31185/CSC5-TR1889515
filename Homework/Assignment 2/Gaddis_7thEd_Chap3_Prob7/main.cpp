@@ -29,8 +29,7 @@ int main(int argc, char** argv) {
                      ateCook;      // Enter Number of Cookies Consumed
     
     //Outputs
-   unsigned short  serCook=0,      //Amount of Calories Per Serving
-                   oneCook=0;      //Amount of Calories Per Serving 
+   unsigned short  oneCook=0;      //Amount of Calories Per Serving 
 
     //Ask How Many Cookies Ate and Display Calories Consumed
     cout<<"How Many Cookies Did You Eat " <<endl;

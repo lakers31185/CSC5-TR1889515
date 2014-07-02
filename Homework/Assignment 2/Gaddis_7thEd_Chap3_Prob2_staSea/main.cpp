@@ -19,12 +19,18 @@ using namespace std;
 //Execution Begins Here!
 int main(int argc, char** argv){
 
-    //Declare and Initialize Variables
-    float classA, classB, classC; // Price of each Seat ($)
-    float totikA, totikB, totikC;   //Price and Seat Totals
-    float totInc; //Total From All Ticket Sales
+//Declare and Initialize Variables
+
+    //Inputs
+    float classA, classB, classC;    // Price of each Seat ($)
     
-    //Calculations and Outputs of Each Class
+    //Outputs
+    float totikA=0, totikB=0, totikC=0;   //Price and Seat Totals
+    float totInc=0;                   //Total From All Ticket Sales
+    
+//Calculations    
+    
+    //Calculations and Outputs of Each Class (A,B,C)
     cout<<showpoint<<endl;
     cout<<setprecision(2)<<fixed;
     cout<<"How Many Class A Tickets Total= " <<endl;
@@ -42,8 +48,10 @@ int main(int argc, char** argv){
     
     //Calculations for Total Income of all Classes Combined
     cout<<setprecision(2)<<fixed;
-    cout<<"Total Income Earned From All Ticket Sales= " <<endl;
     totInc = totikA + totikB + totikC;
+    
+    //Display Total Income Earned
+    cout<<"Total Income Earned From All Ticket Sales= " <<endl;
     cout<<"Total= ($)" <<totInc<<endl;
    
     //Exit stage right!   

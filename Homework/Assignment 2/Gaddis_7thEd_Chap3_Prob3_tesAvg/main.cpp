@@ -19,11 +19,15 @@ using namespace std;
 //Execution Begins Here!
 int main(int argc, char** argv){
 
-    //Declare and Initialize Variables
-    int short test1, test2, test3, test4, test5;
-    int short average;
+//Declare and Initialize Variables
     
-    //Get the Test Scores
+    //Inputs
+    int short test1, test2, test3, test4, test5;
+    
+    //Outputs
+    int short average=0;
+   
+    //Enter the Test Scores
     cout<<setprecision(1)<<fixed<<endl;
     cout<<fixed<<endl;
     cout<<"Enter Test 1 Score= ";
@@ -36,13 +40,15 @@ int main(int argc, char** argv){
     cin>>test4;
     cout<<"Enter Test 5 Score= ";
     cin>>test5;
+
+//Calculations   
     
     //Calculate the Average
-    cout<<setprecision(1)<<fixed<<endl;
-    cout<<fixed<<endl;  
     average = (test1+test2+test3+test4+test5) / 5.0;
     
     //Display the Average
+    cout<<setprecision(1)<<fixed<<endl;
+    cout<<fixed<<endl;  
     cout<<"The Average Score Is= " <<average<<endl;
     
      //Exit stage right!   

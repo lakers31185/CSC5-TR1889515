@@ -18,19 +18,31 @@ using namespace std;
 
 //Execution Begins Here!
 int main(int argc, char** argv){
+
+//Declare and initialize variables
     
-    //Declare and initialize variables
-    float miles, // Maximum Mileage on a Full Tank (miles)
-          gallons, // Maximum Capacity of Fuel  (gallons)
-          mPg; // Calculated Miles per Gallon  (MPG)
+    //Inputs
+    float miles,    // Maximum Mileage on a Full Tank (miles)
+          gallons;  // Maximum Capacity of Fuel  (gallons)
+         
+    //Outputs        
+    int mPg; // Calculated Miles per Gallon  (MPG)
     
-    //Output the Results
+    //Enter Maximum Mileage on a Full Tank
     cout<<setprecision(1)<<fixed;
     cout<<"Enter Mileage on a Full Tank (mi): " <<endl;
     cin>>miles;
+    
+    //Enter Cars Maximum Capacity of Fuel
     cout<<"Enter Car's Maximum Capacity of Fuel (gal)" <<endl;
     cin>>gallons;
+    
+//Calculations 
+    
+    //Calculations For Miles Per Gallon 
     mPg=miles/gallons;
+    
+    //Display Calculation for Car's Miles Per Gallon
     cout<<"Car's Miles per Gallon "<<mPg<<endl;
     
     //Exit stage right!   

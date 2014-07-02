@@ -32,10 +32,10 @@ int main(int argc, char** argv) {
           grosTot;          //Gross Box Office Profit
    
     //Outputs   
-    unsigned short adlTot,  //Total Number Adult Tickets Purchased
-                   kidTot;  //Total Number Kids Tickets Purchased
-    float netPro,           //Net Box Office Profit
-          amtPaid;          //Amount Paid to Distributor
+    unsigned short adlTot=0,  //Total Number Adult Tickets Purchased
+                   kidTot=0;  //Total Number Kids Tickets Purchased
+    float netPro=0,             //Net Box Office Profit
+          amtPaid=0;            //Amount Paid to Distributor
     
     //Enter Name of Movie
     cout<<"Enter the Name of Movie Your Going to Watch?"<<endl;
@@ -50,7 +50,7 @@ int main(int argc, char** argv) {
     cin>>kidTik;
  
     
-    //Calculations   
+//Calculations   
     
     //Calculate Total Profit for Adults
     adlTot=aldPri*adlTik;
@@ -67,7 +67,7 @@ int main(int argc, char** argv) {
     //Calculate Amount Paid to Distributor
     amtPaid=grosTot-netPro;
     
-    //Display the Outputs
+//Display the Outputs
     cout<<setprecision(2)<<fixed<<endl;
     cout<<"Movie Chosen: " <<movie<<endl;
     cout<<"Adult Tickets Sold: " <<adlTik<<endl;
