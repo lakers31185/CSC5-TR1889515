@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
                    kidTik;  //Enter Total Number of Kids Tickets
     float aldPri= 6.00,     //Price of Adult Tickets
           kidPri= 3.00,     //Price of Kids Tickets
-          boxPer= 20.0e-2f,     //Percentage Theater keeps for Profit 
+          boxPer= 20.0e-2f, //Percentage Theater keeps for Profit 
           grosTot;          //Gross Box Office Profit
    
     //Outputs   
@@ -37,7 +37,7 @@ int main(int argc, char** argv) {
     float netPro,           //Net Box Office Profit
           amtPaid;          //Amount Paid to Distributor
     
-    //Enter Name of Movie
+    //Enter Name of Movieup
     cout<<"Enter the Name of Movie Your Going to Watch?"<<endl;
     cin>>movie;
     
