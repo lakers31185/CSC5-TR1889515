@@ -23,34 +23,25 @@ int main(int argc, char** argv) {
 //Declare variables
 
     //Inputs
-    int            bagCook= 40; //Number of Cookies Per Bag
-    unsigned short   servs= 10, //Number of Servings Per Bag
-                     cals= 300, //Number of Calories Per Bag
-                       ateCook; // Enter Number of Cookies Consumed
+    int              bagCook= 40;  //Number of Cookies Per Bag
+    unsigned short   servs= 10,    //Number of Servings Per Bag
+                     cals= 300,    //Number of Calories Per Bag
+                     ateCook;      // Enter Number of Cookies Consumed
     
     //Outputs
-      float        numCook, //Amount of Cookies Per Serving
-                   serCook, //Amount of Calories Per Serving
-                   oneCook; //Amount of Calories Per Serving 
+   unsigned short  serCook=0,      //Amount of Calories Per Serving
+                   oneCook=0;      //Amount of Calories Per Serving 
 
     //Ask How Many Cookies Ate and Display Calories Consumed
     cout<<"How Many Cookies Did You Eat " <<endl;
     cin>>ateCook;
     
-    //Calculations
-    
-    // Calculations for One Serving in One Bag 
-    serCook= cals/servs;
-    
-    //Calculations for Amount of Calories per Serving
-    numCook= bagCook/servs;
+//Calculations
     
     //Calculations for Calories in One Cookie
-    oneCook= (serCook/numCook)*ateCook;
+    oneCook= (ateCook*servs*cals)/bagCook;
     
-//Display the Outputs
-    
-    cout<<setprecision(1)<<fixed<<endl;
+    //Display Calories Consumed
     cout<<"You Consumed: (cal)" <<oneCook<<endl;
     
     //Exit stage right!   
