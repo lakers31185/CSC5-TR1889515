@@ -37,7 +37,7 @@ int main(int argc, char** argv) {
     float netPro,           //Net Box Office Profit
           amtPaid;          //Amount Paid to Distributor
     
-    //Enter Name of Movieup
+    //Enter Name of Movie
     cout<<"Enter the Name of Movie Your Going to Watch?"<<endl;
     cin>>movie;
     
