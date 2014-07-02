@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
                    kidTik;  //Enter Total Number of Kids Tickets
     float aldPri= 6.00,     //Price of Adult Tickets
           kidPri= 3.00,     //Price of Kids Tickets
-          boxPer= .20f,     //Percentage Theater keeps for Profit 
+          boxPer= 20.0e-2f,     //Percentage Theater keeps for Profit 
           grosTot;          //Gross Box Office Profit
    
     //Outputs   
