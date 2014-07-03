@@ -26,7 +26,7 @@ int main(int argc, char** argv){
           gallons;  // Maximum Capacity of Fuel  (gallons)
          
     //Outputs        
-    int mPg; // Calculated Miles per Gallon  (MPG)
+    int mPg=0; // Calculated Miles per Gallon  (MPG)
     
     //Enter Maximum Mileage on a Full Tank
     cout<<setprecision(1)<<fixed;
