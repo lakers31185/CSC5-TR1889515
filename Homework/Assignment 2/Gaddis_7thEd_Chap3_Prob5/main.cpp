@@ -8,6 +8,7 @@
 //System Libraries
 #include <iostream>
 #include <iomanip>
+#include <string>
 using namespace std;
 
 //User Libraries
@@ -39,7 +40,7 @@ int main(int argc, char** argv) {
     
     //Enter Name of Movie
     cout<<"Enter the Name of Movie Your Going to Watch?"<<endl;
-    cin>>movie;
+    getline(cin,movie);
     
     //Enter Total Amount of Adult Ticket Sold 
     cout<<"Enter Total of Adult Tickets Sold"<<endl;
