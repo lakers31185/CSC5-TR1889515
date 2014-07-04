@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Tony Reyes
  * July, 2 2014
- * Purpose: Gaddis 7thEd Chap4 Prob1 Min/Max
+ * Purpose: Gaddis 7thEd Chap4 Prob2 Roman N
  */
 
 //System Libraries
