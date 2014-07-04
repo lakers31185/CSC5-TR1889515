@@ -27,13 +27,13 @@ int main(int argc, char** argv) {
 //Declare variables & Initialize Entries
 
     //Inputs
-    int mnth,       //Month for Magic Date Calculations
-         Day,       //Day for Magic Date Calculations
-        Year;       //Year for Magic Date Calculations
+    unsigned short mnth,       //Month for Magic Date Calculations
+                   Day,       //Day for Magic Date Calculations
+                   Year;       //Year for Magic Date Calculations
     
     //Outputs
-    int intDate,     //Product of Month*Day
-        magDate;     //Magic Date Formula: Month*Day = Year
+    unsigned short intDate=0,     //Product of Month*Day
+                   magDate=0;     //Magic Date Formula: Month*Day = Year
  
 //Enter Month, Day & Year for Magic Date Calculations
     cout<<"Enter A Month For Magic Date Calculation: ";
