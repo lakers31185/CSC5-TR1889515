@@ -7,7 +7,7 @@
 
 //System Libraries
 #include <iostream>
-#include <cmath>
+
 using namespace std;
 
 
@@ -48,9 +48,14 @@ int main(int argc, char** argv) {
 //Validate Outputs
      
     //Validate BMI
-    if (bMi > bmiMin) && (bmiMax < bMi)
-        cout<<"Weight is OPtimal"
-    else if 
+    if (bMi > bmiMin < bmiMax)
+        cout<<"Weight is OPtimal";
+    else if (bmiMin > bMi)
+        cout<<"You Are Underweight";
+    else if (bMi > bmiMax)
+        cout<<"Your Are Over Weight";
+    
+        
     
     //Exit stage right!   
     return 0;
