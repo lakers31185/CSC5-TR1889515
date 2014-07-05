@@ -25,10 +25,10 @@ int main(int argc, char** argv) {
     //Declare variables & Initialize Entries
 
     //Inputs
-    float mass;
+    float mass;         //Input Mass in Kilograms (kg))
         
     //Outputs
-   float weigh;
+   float weigh;         //Calculated Weight in Newton (N)
     
     //Enter Mass of Object to be Calculated
     cout<<"Enter Objects Mass: ";
@@ -37,20 +37,19 @@ int main(int argc, char** argv) {
 //Calculations 
 
     //Calculate using Newton Formula & Display
-    weigh= mass*9.8e-1f;
+    weigh= mass*9.8f;
     cout<<"Calculated Weight= " <<weigh<<endl;
     
 //Validate Outputs
     
     //Set Ranges $ Validate Expressions
-    if (weigh < 10) 
+    if (weigh < 1e1f) 
        cout<<"Object Too Light";
-    else if (weigh > 1000)
+    else if (weigh > 10e2f)
           cout<<"Object Too Heavy ";
-    else if (weigh >= 10 < 1000)
-        cout<<"Wait is Normal";            
-  
-//Exit stage right!   
+    else if (weigh >=1e1f < 10e2f)
+
+    //Exit stage right!   
     return 0;
 } 
 
