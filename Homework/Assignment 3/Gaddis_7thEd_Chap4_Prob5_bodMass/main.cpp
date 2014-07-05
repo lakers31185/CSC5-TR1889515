@@ -27,11 +27,11 @@ int main(int argc, char** argv) {
 //Declare variables & Initialize Entries
 
     //Inputs
-    float weigh,     //Enter Weight in Inches (in.)
-          heigh;     //Enter Height in Pounds (lbs.)  
+    float weigh,          //Enter Weight in Inches (in.)
+          heigh;          //Enter Height in Pounds (lbs.)  
            
     //Outputs
-    float bMi=0;
+    float bMi=0;           //Calculated Body Mass Index
     
     //Enter Weight and Height
     cout<<"Enter Your Height: (in.) ";
@@ -43,9 +43,10 @@ int main(int argc, char** argv) {
     
     //Calculate Body Mass Index
     bMi= (weigh*703)/(heigh*heigh);   
+
 //Validate Outputs
      
-    //Validate BMI
+    //Set BMI Ranges & Validate Expressions
     if (bMi < 18.5)
         cout<<"You Are Underweight";
     else if (bMi > 25)
@@ -53,8 +54,6 @@ int main(int argc, char** argv) {
     else if (bMi >= 18.5 < 25)
         cout<<"Your Are Optimal Weight";
     
-        
-    
-    //Exit stage right!   
+ //Exit stage right!   
     return 0;
 }
