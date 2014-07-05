@@ -27,18 +27,16 @@ int main(int argc, char** argv) {
 //Declare variables & Initialize Entries
 
     //Inputs
-    int weigh,
-        heigh,
-            bmiMin= 18.5,
-            bmiMax= 25;
-    
+    float weigh,     //Enter Weight in Inches (in.)
+          heigh;     //Enter Height in Pounds (lbs.)  
+           
     //Outputs
     float bMi=0;
     
     //Enter Weight and Height
-    cout<<"Enter Your Height "
+    cout<<"Enter Your Height: (in.) ";
     cin>>heigh;
-    cout << "Enter Your Weight "
+    cout << "Enter Your Weight: (lbs.) ";
     cin>>weigh;
     
 //Calculations
@@ -48,12 +46,12 @@ int main(int argc, char** argv) {
 //Validate Outputs
      
     //Validate BMI
-    if (bMi > bmiMin < bmiMax)
-        cout<<"Weight is OPtimal";
-    else if (bmiMin > bMi)
+    if (bMi < 18.5)
         cout<<"You Are Underweight";
-    else if (bMi > bmiMax)
-        cout<<"Your Are Over Weight";
+    else if (bMi > 25)
+        cout<<"You Are Overweight";
+    else if (bMi >= 18.5 < 25)
+        cout<<"Your Are Optimal Weight";
     
         
     
