@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
    float weigh;
     
     //Enter Mass of Object to be Calculated
-    cout<<"Enter Objects Math: ";
+    cout<<"Enter Objects Mass: ";
     cin>>mass;
     
 //Calculations 
@@ -43,11 +43,11 @@ int main(int argc, char** argv) {
 //Validate Outputs
     
     //Set Ranges $ Validate Expressions
-    if (weigh < 10.0) 
+    if (weigh < 10) 
        cout<<"Object Too Light";
-    else if (weigh > 1000.0)
+    else if (weigh > 1000)
           cout<<"Object Too Heavy ";
-    else if (weigh >= 10.0 < 1000.0)
+    else if (weigh >= 10 < 1000)
         cout<<"Wait is Normal";            
   
 //Exit stage right!   
