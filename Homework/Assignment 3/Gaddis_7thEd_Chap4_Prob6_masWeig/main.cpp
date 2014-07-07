@@ -25,7 +25,7 @@ int main(int argc, char** argv) {
     //Declare variables & Initialize Entries
 
     //Inputs
-    float mass;         //Input Mass in Kilograms (kg))
+    float mass;         //Input Mass in Kilograms (kg)
         
     //Outputs
    float weigh;         //Calculated Weight in Newton (N)
@@ -42,7 +42,7 @@ int main(int argc, char** argv) {
     
 //Validate Outputs
     
-    //Set Ranges $ Validate Expressions
+    //Set Ranges & Validate Expressions
     if (weigh < 1e1f) 
        cout<<"Object Too Light";
     else if (weigh > 10e2f)
