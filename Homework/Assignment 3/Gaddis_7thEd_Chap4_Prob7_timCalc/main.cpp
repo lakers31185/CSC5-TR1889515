@@ -2,8 +2,8 @@
  * File:   main.cpp
  * Author: Tony Reyes
  * July, 2 2014
- * Purpose: Gaddis 7thEd Chap4 Prob6 Mass & Weight
- */
+ * Purpose: Gaddis 7thEd Chap4 Prob7 Time Calc.
+  */
 
 //System Libraries
 #include <iostream>
