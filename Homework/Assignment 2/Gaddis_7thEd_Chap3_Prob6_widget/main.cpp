@@ -48,7 +48,7 @@ int main(int argc, char** argv) {
    //Calculation for Entire Pallet
    totWei=(intWei-pallet)/widget;
    
-   //Display the Total Amount of Widgets
+//Display Outputs of the Total Amount of Widgets
    cout<<fixed<<setprecision(0);
    cout<<"Total Amount of Widgets= " <<totWei<<endl;
    

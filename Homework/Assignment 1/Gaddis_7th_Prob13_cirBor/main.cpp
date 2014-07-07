@@ -20,7 +20,7 @@ using namespace std;
 int main(int argc, char** argv){
     
     //Declare and initialize variables
-    float cirPri= 12.67; //Price of Circuit Board ($))
+    float cirPri= 12.67f; //Price of Circuit Board ($))
     float cirPer= .40f; //Percentage of Profit from Each Board
     float cirPro;
     

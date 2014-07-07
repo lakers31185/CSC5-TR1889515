@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
     //Calculate Amount of Reconstruction
     totIns=insPer*repCost;
     
-    //Display Minimum Amount of Coverage Needed
+//Display Outputs of Minimum Amount of Coverage Needed
     cout<<fixed<<setprecision(2);
     cout<<"Minimum Amount of Insurance That Should be Bought ($) " <<totIns<<endl;
     

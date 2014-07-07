@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
     //Calculations for Calories in One Cookie
     oneCook= (ateCook*servs*cals)/bagCook;
     
-    //Display Calories Consumed
+//Display Outputs of Calories Consumed
     cout<<"You Consumed: (cal)" <<oneCook<<endl;
     
     //Exit stage right!   

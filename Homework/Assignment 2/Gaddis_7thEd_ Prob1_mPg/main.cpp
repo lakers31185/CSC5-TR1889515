@@ -42,7 +42,7 @@ int main(int argc, char** argv){
     //Calculations For Miles Per Gallon 
     mPg=miles/gallons;
     
-    //Display Calculation for Car's Miles Per Gallon
+    //Display Output of Calculation for Car's Miles Per Gallon
     cout<<"Car's Miles per Gallon "<<mPg<<endl;
     
     //Exit stage right!   

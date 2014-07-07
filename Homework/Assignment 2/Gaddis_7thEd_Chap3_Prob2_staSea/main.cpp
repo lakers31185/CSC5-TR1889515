@@ -50,7 +50,7 @@ int main(int argc, char** argv){
     cout<<setprecision(2)<<fixed;
     totInc = totikA + totikB + totikC;
     
-    //Display Total Income Earned
+//Display Output of Total Income Earned
     cout<<"Total Income Earned From All Ticket Sales= " <<endl;
     cout<<"Total= ($)" <<totInc<<endl;
    
