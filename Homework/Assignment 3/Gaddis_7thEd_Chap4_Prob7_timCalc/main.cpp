@@ -15,9 +15,9 @@ using namespace std;
 
 
 //Global Constants
-const float minCalc= 60/1,          //Seconds in a Minute
-            houCalc= 3600/1,        //Seconds in a Hour       
-            dayCalc= 86400/1;       //Seconds in a Day
+const float minCalc= 60/1,          //Calculate Seconds in a Minute
+            houCalc= 3600/1,        //Calculate Seconds in a Hour       
+            dayCalc= 86400/1;       //Calculate Seconds in a Day
 
 //Function Prototypes
 
@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
 //Declare variables & Initialize Entries
 
     //Inputs
-    float numSec;       //Enter A Number of Seconds for Calc. 
+    float numSec;       // Number Entered for Calc. 
     
     //Outputs
     float min,          //Calculation of Minutes in Sec.
@@ -41,14 +41,14 @@ int main(int argc, char** argv) {
    
 //Calculations
     
-    //Calculate Seconds in a Minute
+    //Calculate Minutes, Hours, Days
     min= numSec/60;
     hour= numSec/3600;
     day= numSec/86400;
     
 //Set Ranges & Validate Expressions
    
-    //Set Ranges for Minutes, Hours, Days
+    //Set Ranges for Minutes, Hours, Days & Display
     cout<<fixed<<setprecision(2);
     if (numSec >= minCalc && numSec < houCalc) 
     {   
