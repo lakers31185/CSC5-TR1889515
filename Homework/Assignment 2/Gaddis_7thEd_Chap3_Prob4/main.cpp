@@ -21,7 +21,7 @@ using namespace std;
 //Execution Begins Here!
 int main(int argc, char** argv){
 
-//Declare and Initialize Variables
+//Declare Variables and Initialize Entries
 
     //Inputs
     const char mSIZE=10;                        //Includes the null terminator
@@ -31,7 +31,7 @@ int main(int argc, char** argv){
     //Outputs
     float avgRn=0;                              //Average Total Rainfall
     
-    //Input a Month
+    //Input Name of Month to be Calculated
     cout<<"Enter Name of 1st Month to be Calculated ";
     cin>>mnth1;
     cout<<"Enter Name of 2nd Month to be Calculated ";
@@ -40,7 +40,7 @@ int main(int argc, char** argv){
     cin>>mnth3;
     cout<<""<<mnth1<<mnth2<<mnth3<<endl;
     
-    //Input Each Months Average
+    //Input Each Months Rainfall Average
     cout<<"Enter 1st Months Total Rainfall ";
     cin>>totRn1;
     cout<<"Enter 2nd Months Total Rainfall ";
@@ -48,10 +48,10 @@ int main(int argc, char** argv){
     cout<<"Enter 3rd Months Rainfall ";
     cin>>totRn3;
     
-    //Calculate the Average
+    //Calculate the Rainfall Average
     avgRn = (totRn1+totRn2+totRn3)/3.0;
     
-//Display Output of the Average
+//Display Output of the Rainfall Average
     cout<<fixed<<setprecision(2);
     cout<<"Month1:    "<<mnth1<<endl;
     cout<<"Month2:    "<<mnth2<<endl;
