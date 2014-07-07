@@ -5,30 +5,40 @@
  * Purpose: Gaddis 7thEd Chap3 Prob10 Celsius Fahrenheit
  */
 
+
 //System Libraries
 #include <iostream>
 #include <iomanip>
 using namespace std;
 
+
 //User Libraries
+
+
 
 
 //Global Constants
 
 
+
+
 //Function Prototypes
+
+
 
 
 //Execution Starts Here!
 int main(int argc, char** argv){
 
+
 //Declare variables & Initialize Entries
 
+
     //Inputs
-   unsigned short  boilCel= 0,
-                   frezCel= 100,
-                   boilFah= 212,
-                   frezFah= 32,
+   unsigned short  boilCel= 0,          //Celsius Boiling Point
+                   frezCel= 100,        //Celsius Freezing Point
+                   boilFah= 212,        //Boiling Point Fahrenheit
+                   frezFah= 32,         //Freezing Point Point
                    celsius;
     //Outputs
     unsigned short fahr=0;
@@ -40,7 +50,7 @@ int main(int argc, char** argv){
 //Calculations
     
     //COnvert Celsius to Fahrenheit
-    fahr= frezFah+(boilFah-frezFah/frezCel-boilCel)*(celsius-frezCel);
+    fahr= (9/5*celsius)+32;
     
 //Display Outputs
     
@@ -51,8 +61,5 @@ int main(int argc, char** argv){
 //Exit Stage Right
     return 0;
 }
-
- 
- 
 
 
