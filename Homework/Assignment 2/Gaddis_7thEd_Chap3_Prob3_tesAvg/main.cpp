@@ -19,7 +19,7 @@ using namespace std;
 //Execution Begins Here!
 int main(int argc, char** argv){
 
-//Declare and Initialize Variables
+//Declare Variables and Initialize Entries
     
     //Inputs
     int short test1, test2, test3, test4, test5;
@@ -46,7 +46,9 @@ int main(int argc, char** argv){
     //Calculate the Average
     average = (test1+test2+test3+test4+test5) / 5.0;
     
-//Display Output of the Average
+//Display Outputs
+    
+    //Output of Average
     cout<<setprecision(1)<<fixed<<endl;
     cout<<fixed<<endl;  
     cout<<"The Average Score Is= " <<average<<endl;

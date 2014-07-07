@@ -32,20 +32,20 @@ int main(int argc, char** argv){
     float avgRn=0;                              //Average Total Rainfall
     
     //Input a Month
-    cout<<"Enter 1st Month to be Calculated ";
+    cout<<"Enter Name of 1st Month to be Calculated ";
     cin>>mnth1;
-    cout<<"Enter 2nd Month to be Calculated ";
+    cout<<"Enter Name of 2nd Month to be Calculated ";
     cin>>mnth2;
-    cout<<"Enter 3rd Month to be Calculated ";
+    cout<<"Enter  Name of 3rd Month to be Calculated ";
     cin>>mnth3;
     cout<<""<<mnth1<<mnth2<<mnth3<<endl;
     
     //Input Each Months Average
     cout<<"Enter 1st Months Total Rainfall ";
     cin>>totRn1;
-    cout<<"Enter 1st Months Total Rainfall ";
+    cout<<"Enter 2nd Months Total Rainfall ";
     cin>>totRn2;
-    cout<<"Enter 1st Months Rainfall ";
+    cout<<"Enter 3rd Months Rainfall ";
     cin>>totRn3;
     
     //Calculate the Average

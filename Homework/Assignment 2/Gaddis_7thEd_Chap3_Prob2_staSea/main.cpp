@@ -22,11 +22,11 @@ int main(int argc, char** argv){
 //Declare and Initialize Variables
 
     //Inputs
-    float classA, classB, classC;    // Price of each Seat ($)
+    float classA, classB, classC;            // Price of each Seat ($)
     
     //Outputs
-    float totikA=0, totikB=0, totikC=0;   //Price and Seat Totals
-    float totInc=0;                   //Total From All Ticket Sales
+    float totikA=0, totikB=0, totikC=0;     //Price and Seat Totals
+    float totInc=0;                        //Total From All Ticket Sales
     
 //Calculations    
     
@@ -45,6 +45,8 @@ int main(int argc, char** argv){
     cin>>classC;
     totikC = classC * 9.00;
     cout<<"The Total Income from Class C seats($)= " <<totikC<<endl;
+
+//Calculations
     
     //Calculations for Total Income of all Classes Combined
     cout<<setprecision(2)<<fixed;
