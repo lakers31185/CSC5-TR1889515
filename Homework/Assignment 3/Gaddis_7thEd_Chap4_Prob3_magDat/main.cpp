@@ -29,10 +29,10 @@ int main(int argc, char** argv) {
     //Inputs
     unsigned short mnth,       //Month for Magic Date Calculations
                    Day,       //Day for Magic Date Calculations
-                   Year;       //Year for Magic Date Calculations
-    
+                   Year,       //Year for Magic Date Calculations
+                   intDate=0;     //Product of Month*Day
     //Outputs
-    unsigned short intDate=0,     //Product of Month*Day
+    unsigned short 
                    magDate=0;     //Magic Date Formula: Month*Day = Year
  
 //Enter Month, Day & Year for Magic Date Calculations
