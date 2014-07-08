@@ -21,7 +21,7 @@ using namespace std;
 //Execution Starts Here!
 int main(int argc, char** argv) {
 
-//Declare variables
+//Declare variables & Initialize Entries
 
     //Inputs
     string movie;           //Movie Selected From Box Office
