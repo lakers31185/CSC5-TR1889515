@@ -55,15 +55,18 @@ int main(int argc, char** argv) {
    //Set Ranges for (%20, %30, %40 and %50) & Display Outputs
    cout<<setprecision(2)<<fixed<<endl;
    //(numUni > 0)
-   if (numUni == 10 || numUni < 19)
+    if (numUni < 10)
+       cout<<"No Discount";
+   else if (numUni == 10 || numUni < 19)
        cout<<"Total Purchase Amount Including %20 Discount= "<<totPur1;
+ 
    else if (numUni == 20 || numUni < 49)
        cout<<"Total Purchase Amount Including %30 Discount= "<<totPur2;
    else if (numUni == 50 || numUni < 99)
        cout<<"Total Purchase Amount Including %40 Discount= "<<totPur3;
    else if (numUni >= 100)
        cout<<"Total Purchase Amount Including %50 Discount= "<<totPur4;
-  
+   
 //Exit stage right
     return 0;
 }
