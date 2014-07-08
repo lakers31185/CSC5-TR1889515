@@ -1,12 +1,19 @@
 /* 
  * File:   main.cpp
- * Author: Dr. Mark E. Lehr
+ * Author: Tony reyes
  * Purpose:  To Illustrate the code for
  * developing a menu
- * Problem 1 -> Sum the numbers between 1 and 10 with a for-loop
- * Problem 2 -> Sum the numbers between 1 and 10 with a while-loop
- * Problem 3 -> Sum the numbers between 1 and 10 with a do-while loop
- * Created on October 13, 2011, 6:44 PM
+ * Problem 1 -> Min/Max Number
+ * Problem 2 -> Roman Numeral
+ * Problem 3 -> Magic Date
+ * Problem 4 -> Area of a Rectangle
+ * Problem 5 -> Mass * Weight
+ * Problem 6 -> Body Mass Index
+ * Problem 7 -> Time Calculator
+ * Problem 8 -> Dollar Game
+ * Problem 9 -> Math Tutor
+ * Problem 10 -> Software Sales
+* Created on October 13, 2011, 6:44 PM
  */
 
 #include <cstdlib>
