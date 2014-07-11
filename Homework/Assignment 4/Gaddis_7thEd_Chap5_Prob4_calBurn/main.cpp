@@ -32,10 +32,13 @@ int main(int argc, char** argv) {
     
     //For Loop of Calories per Minute for (10,15,20,25,30)Min.
     for (int min = 10; min <= 30;min+=5){
-        float calMin= 3.9;              //Number of Calories Burned Per Minute
-        calMin*=min;                    //Calculate Calories Per Minute
+         //Number of Calories Burned Per Minute
+        float calMin= 3.9;             
+        //Calculate Calories Per Minute
+        calMin*=min;
+        //Display Output of Calories Per Minute Burned on Treadmill
         cout<<calMin;
-            //Display Calories per Minute For (10,15,20,25,30)Min
+            //Display Minutes(10,15,20,25,30)
             if (min < 31){
             cout<<"\t            \t"<<min<<endl;   
             }
