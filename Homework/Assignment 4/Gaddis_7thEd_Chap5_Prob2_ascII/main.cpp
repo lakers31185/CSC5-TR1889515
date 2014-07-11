@@ -23,16 +23,15 @@ using namespace std;
 //Execution Starts Here!
 int main(int argc, char** argv) {
 
-
-//Declare variables & Initialize Entries
-
-     //Outputs
-    char ascii=0;
-    int num=0;
+    //Write Program to Show ASCII Codes 1 - 127
     
-  { 
- for(int i=0;i<=127;i++) 
- cout<<i<<"\t"<<( char) i<<endl; 
-   }
- return 0; 
-   }
+    //For-Loop Changing Number to ASCII
+    for(unsigned char num=0;num<=127;num++){
+        //Display ASCII Code
+        cout<<num;
+            //Display Output of 16 Characters Per Line
+            if (num%16==15)cout<<endl;
+    }
+    //Exit Stage Right!
+    return 0; 
+    }

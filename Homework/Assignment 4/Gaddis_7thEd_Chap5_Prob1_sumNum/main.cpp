@@ -23,35 +23,30 @@ using namespace std;
 //Execution Starts Here!
 int main(int argc, char** argv) {
 
+    //Declare variables & Initialize Entries
 
-//Declare variables & Initialize Entries
-
-     //Inputs
-    int posNum;             //Positive Integer Entered
+    //Inputs
+    int posNum;             //Positive Integer MUST BE Entered
     
     //Outputs
-    int sumInt=0;           //Sum of All Integers
-    int a=0;                //Loop Counter Started at Zero
-    
-    //Enter A Positive Integer Value & Display Input
+    int sumInt=0;           //Sum of All Integers Up to Entry Number
+                
+    //Do-While Loop For Positive Integer Only
     do{
         cout<<"Enter Positive Integer= "<<endl;
-        cout<<"Positive Number Not Entered! "<<endl;
         cin>>posNum;
+            if (posNum < 1)
+            cout<<"Enter Positive Number! "<<endl;
     }while(!(posNum>0&&posNum<1e9));
 
-//Calculations & Loop
-    
-    //For Loop to Increment and Sum
-    for (int b=1; b <= posNum; b++) {
-    sumInt+=b;
-    a++;
-    cout<<sumInt<<endl;
+        //For Loop to Increment and Sum
+        for (int b=1; b <= posNum; b++) {
+            sumInt+=b;
+            cout<<sumInt<<endl;
     }
-//Display Outputs
-    
     //Display Sum of All Incremented Integers
     cout << "The sum is: " << sumInt << endl;
-
+    
+    //Exit Stage Right!
     return 0;
 }
