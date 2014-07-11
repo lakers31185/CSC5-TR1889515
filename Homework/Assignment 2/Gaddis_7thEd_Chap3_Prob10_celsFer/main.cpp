@@ -50,7 +50,7 @@ int main(int argc, char** argv){
 //Calculations
     
     //COnvert Celsius to Fahrenheit
-    fahr= (9/5*celsius)+32;
+    fahr= (1.8*celsius)+32;
     
 //Display Outputs
     
