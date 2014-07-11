@@ -38,7 +38,8 @@ int main(int argc, char** argv){
     cin>>year;
     
     //For-Loop of 12 Months         
-    for(int months=1;months<=year; months++){ 
+    for(int months=1;months<=year; months++)
+    { 
         //Calculate For Multiple Years
         int Years=12*year;
         //Calculate 12 Months Per Year
@@ -46,7 +47,7 @@ int main(int argc, char** argv){
         //Display 12 Months For Every Year 
         cout<<Years;
    
-    //Do-While Loop Each Months Rainfall & Yearly Average Calculation
+        //Do-While Loop Each Months Rainfall & Yearly Average Calculation
         do{
             //Format Output for Rate & Year Increments
             cout<<"__________________"<<endl;
@@ -66,9 +67,9 @@ int main(int argc, char** argv){
                 
             //Calculate More Years
         }while (year == morYear);
-    if(months >= year){
-            //Display Total Months Calculated
-            cout<<"                       \Months"<<Years<<endl;
+            if(months >= year){
+                //Display Total Months Calculated
+                cout<<"                       \Months"<<Years<<endl;
             }
    }
     return 0;

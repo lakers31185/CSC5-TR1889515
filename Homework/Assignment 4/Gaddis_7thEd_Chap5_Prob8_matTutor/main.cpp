@@ -24,9 +24,10 @@ using namespace std;
 int main(int argc, char** argv){
      
    //Declare Variables
-    char choice;
-    char playAgn;
-    //Loop to Play Agagin
+    char choice;     //Select From Addition, Subtraction, Multiplication or Div.
+    char playAgn;    //Prompt User for Another Topic
+    
+    //Loop to Play Again
     do{
         //Loop Menu to Find Select Program 
         do{

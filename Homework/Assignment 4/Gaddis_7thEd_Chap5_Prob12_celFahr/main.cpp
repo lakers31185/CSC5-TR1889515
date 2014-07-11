@@ -34,14 +34,19 @@ int main(int argc, char** argv){
     cout<<"Celsius (c)            Fahrenheit (f)"<<endl;
     cout<<"___________            ________________"<<endl;
   
-    
+    //For-Loop of Fahrenheit (0-20)
     for (int fahr=0;fahr<=20;fahr++){
+        //Partial Fahrenheit Formula
         float cels= 1.8f;
+        //Calculate Fahrenheit and Celsius Conversion
         cels*=fahr;
-    cout<<cels+32;
-    if(fahr<21){
-        cout<<"\t          \t"<<fahr<<endl;
-          }
+        //Add 32 to Calculation and Display Output
+        cout<<cels+32;
+        //Set Celsius Range 0 - 20   
+        if(fahr<21){
+            //Display Output of Celsius Conversion
+            cout<<"\t          \t"<<fahr<<endl;
+            }
     }
     //Exit Stage Right
     return 0;
