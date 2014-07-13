@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Tony Reyes
  * July, 2 2014
- * Purpose: Gaddis 7thEd Chap3 Prob10 avgRain
+ * Purpose: Gaddis 7thEd Chap3 Prob10 Average Rain
  */
 
 

@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Tony Reyes
  * July, 2 2014
- * Purpose:Gaddis 7thEd Chap5 Prob5 Membership Fee Increase
+ * Purpose:Gaddis 7thEd Chap5 Prob6 Distance Traveled
  */
 
 //System Libraries

@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Tony Reyes
  * July, 2 2014
- * Purpose: Gaddis 7thEd Chap5 Prob12 celsius fahrenheit
+ * Purpose: Gaddis 7thEd Chap5 Prob12 Celsius/Fahrenheit
 */
 
 //System Libraries

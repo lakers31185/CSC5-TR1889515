@@ -13,7 +13,7 @@
  * Problem 8 -> Dollar Game
  * Problem 9 -> Math Tutor
  * Problem 10 -> Software Sales
-* Created on October 13, 2011, 6:44 PM
+* Created on July 4 2014
  */
 
 #include <cstdlib>
