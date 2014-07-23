@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Tony Reyes
  * July, 2 2014
- * Purpose: Gaddis 7thEd Chap6 Prob2 Complete Program
+ * Purpose: Gaddis 7thEd Chap6 Prob3 Winning Division
  */
 
 
