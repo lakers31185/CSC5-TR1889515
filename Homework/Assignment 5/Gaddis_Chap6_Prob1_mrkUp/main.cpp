@@ -60,9 +60,7 @@ using namespace std;
 //cost= Percent  mrk=Mark  
 float calReta(float cost,float mrk)
 {
-//Price Mark Up Function
-//Formula Used Equate Amount
-//cost= Percent  mrk=Mark Up
+//Return Value
 return (cost/100*mrk)+mrk;
 
 }
