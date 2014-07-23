@@ -24,7 +24,7 @@ int finHigh(int,int,int,int);
     int main(int argc, char** argv){
     //Declare Variables
     //Inputs
-      int nort,sout,east,west,high=0,sale=0;
+      int nort,sout,east,west,high=0;
         
   do{
        cout<<"Enter Division Sales:"<<endl;
