@@ -19,7 +19,6 @@ using namespace std;
 
 
 //Function Prototypes
-int getSale(int ,int,int,int);
 int finHigh(int,int,int,int);
 //Execution Starts Here!
     int main(int argc, char** argv){
