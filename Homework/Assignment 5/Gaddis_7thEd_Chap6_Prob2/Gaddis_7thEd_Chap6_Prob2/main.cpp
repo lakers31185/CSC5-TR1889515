@@ -9,19 +9,18 @@
 //System Libraries
 #include <iostream>
 #include<cstdlib>
-#include <iomanip>
 using namespace std;
 
 //User Libraries
 
 
 //Global Constants
-int getLen(int);
-int getWid(int);
-void  getArea(int,int);
+
 
 //Function Prototypes
-
+int getLen(int);
+int getWid(int);
+void getArea(int,int);
 //Execution Starts Here!
     int main(int argc, char** argv){
     //Declare Variables & Initialize Entries
@@ -29,14 +28,16 @@ void  getArea(int,int);
     int length,         //Enter a Length
         width ;         //Enter a Width
       
-    //User Enter A Rectangle Length
+    //User Enter A Rectangle Length to be Doubled
     cout<<"Rectangle Length= ";
     cin>>length;
+     //Call Function Twice the Length
     getLen(length);
 
-    //User Enter a Rectangle Width
+    //User Enter a Rectangle Width to be Doubled
     cout<<"Rectangle Width= ";
     cin>>width;
+    //Call Function Twice the Width
     getWid(width);
 
     //Call Function and Display Area

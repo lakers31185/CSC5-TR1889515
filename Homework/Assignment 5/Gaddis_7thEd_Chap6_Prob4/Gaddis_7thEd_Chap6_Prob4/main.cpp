@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Tony Reyes
  * July, 2 2014
- * Purpose: Gaddis 7thEd Chap6 Prob4 Winning Division
+ * Purpose: Gaddis 7thEd Chap6 Prob5 Winning Division
  */
 
 
@@ -21,13 +21,13 @@ using namespace std;
 
 //Function Prototypes
 int numAcc(string);
-void finLow(int,int,int,int,int);
+void finLow(int,int,int,int,int,int);
 //Execution Starts Here!
     int main(int argc, char** argv){
     //Declare Variables
     //Inputs
     string regName; 
- int north, south, east, west, central; 
+    int north, south, east, west, central,acc; 
 
  cout<<"There will be 5 regions within"
          <<" the major city that Calculated Accidents "<<endl; 
@@ -52,8 +52,7 @@ void finLow(int,int,int,int,int);
  regName="central:"; 
  central = numAcc(regName); 
 
-    
- finLow(north, south, east, west, central);
+ finLow(north, south, east, west, central,acc);
  return 0;
 }
 int numAcc(string regName){ 
@@ -67,7 +66,7 @@ do{
 }while (numAcc < 0); 
 return num; 
 } 
-void finLow(int north, int south, int east, int west, int central) 
+void finLow(int north, int south, int east, int west, int central,int num) 
  { 
     string regName = "north"; 
     
@@ -94,5 +93,6 @@ void finLow(int north, int south, int east, int west, int central)
        val = central; 
     } 
 
-    cout << "The Lowest Region is " << regName << endl; 
+    cout << "The Lowest Region is: " <<regName<<"  The Number Accidents: "<<
+            val<< endl; 
 }
