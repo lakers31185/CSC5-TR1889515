@@ -20,24 +20,16 @@ using namespace std;
 
 //Function Prototypes
 int finHigh(int,int,int,int);
-void disp(int,int,int,int);
+void disp(int &nort,int &sout,int &east, int &west);
 //Execution Starts Here!
     int main(int argc, char** argv){
     //Declare Variables & Initialize Entries
     //Inputs
       int nort,sout,east,west,      //Four Divisions of Company (N,S,E,W)
                        high=0;      //Highest Grossing Division  
-    
+              
       //Enter Sales Totals (Must be Greater than Zero)                  
-    do{
-        cout<<"Enter Division Sales of the 4 Regions: "<<endl;
-        cout<<"Must Not Be Less Than Zero"<<endl;
-        cin>>nort
-         >>sout
-         >>east
-         >>west;
-    }while(nort<0||nort>1e9||sout<0||sout>1e9||east<0||east>1e9||
-            west<0||west>1e9);  
+     disp(nort,sout,east,west);
     //Call Highest Grossing Division Function
     high=finHigh(nort,sout,east,west);
     //Display Output of Highest Grossing Division
@@ -46,7 +38,20 @@ void disp(int,int,int,int);
     //Exit Stage Right
     return 0;
 }
-
+//Reference Function For 4 Regions
+//North, South. East , West
+void disp(int &nort,int &sout,int &east, int &west)
+{
+ do{
+        cout<<"Enter Division Sales of the 4 Regions: "<<endl;
+        cout<<"Must Not Be Less Than Zero"<<endl;
+        cin>>nort
+         >>sout
+         >>east
+         >>west;
+    }while(nort<0||nort>1e9||sout<0||sout>1e9||east<0||east>1e9||
+            west<0||west>1e9);     
+}
 //Highest Grossing Division Function
 //Formula Equates Which Division is Highest Grossing
 //div1= Division 1  div2= Division 2  div3= Division 3  div4= Division 4

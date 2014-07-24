@@ -20,36 +20,45 @@ using namespace std;
 
 
 //Function Prototypes
+void fahr(float &num);
 float celsi(float);
 
 //Execution Starts Here!
-    int main(int argc, char** argv){
-    //Declare Variables
-    //Inputs
-        float num, temp=31,cel=0;
-       
-        cout<<"Enter Fahrenheit to be Converted ";
-       cin>>num;
-        
-        for (int tabl=0;tabl<=20;tabl++){  
-    
-            
-                
-            temp++;
-           cel=celsi(num);
-           cel+=tabl;
-      cout<<"Celsius Temperature Is: "<<cel<<"Fahrenheit Is: "<<temp<<endl;
-       } 
-       
-        
-    return 0;
+int main(int argc, char** argv){
+
+//Declare Variables
+//Inputs
+float num, temp=31,cel=0;
+
+//Call as Reference Function for Fahrenheit
+fahr(num);
+
+//For Loop for Celsius (0-20) degrees/ Fahrenheit (32-52) degrees
+for (int tabl=0;tabl<=20;tabl++)
+{  
+    //Increment Fahrenheit
+    temp++;
+    //Call Function That Converts Celsius to Fahrenheit
+    cel=celsi(num);
+    //Equate 20 Temperatures (0-20) degrees
+    cel+=tabl;
+    //Display Function Output of Conversion
+    cout<<"Celsius Temperature Is: "<<cel<<"Fahrenheit Is: "<<temp<<endl;
+} 
+return 0;
 }
+//Reference Function That ask for Fahrenheit to be Converted
+//&num = Fahrenheit Degree
+void fahr(float &num)
+{
+    cout<<"Enter Fahrenheit to be Converted ";
+    cin>>num;
+}
+//Function That Converts Fahrenheit to Celsius
+//fahr= Fahrenheit degree input
 float celsi(float fahr)
 {
-
-    
-    
-    
-    return 1.8*(fahr-32);
+//Return Conversion Calculation
+return 1.8*(fahr-32);
 }
 

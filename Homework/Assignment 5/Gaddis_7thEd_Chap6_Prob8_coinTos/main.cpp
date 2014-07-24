@@ -20,13 +20,15 @@ using namespace std;
 //Function Prototypes
 void coinTos();
 
-
 //Execution Starts Here!
 int main(int argc, char** argv) {
-    int flips;
+    //Declare Variables
+    int flips;          //Number of Flips
+    
     //Set the Random number seed
     srand(static_cast<unsigned int>(time(0)));
     
+    //How many Times Should We Flip The Coin?
     cout<<"How Many Times You Do You Want To Flip Coin? ";
     cin>>flips;
     
@@ -34,21 +36,17 @@ int main(int argc, char** argv) {
     for(int i=1;i<=flips;i++){
         coinTos();
     }
-
-
     return 0;
 }
-
-
-//Simple heads or tails function
+//Dr. Lehr Simple Heads Tail Function
 void coinTos(){
-    
-    //Determine if a flip of a coin is heads or tails
-    bool heads=rand()%2;//Remainder 0,1
-    
-    //Output the result
-    if(heads)cout<<"Heads "<<endl;
-    else cout<<"Tails "<<endl;
-    
+
+//Determine if a flip of a coin is heads or tails
+bool heads=rand()%2;//Remainder 0,1
+
+//Output the result
+if(heads)cout<<"Heads "<<endl;
+else cout<<"Tails "<<endl;
+
 }
 

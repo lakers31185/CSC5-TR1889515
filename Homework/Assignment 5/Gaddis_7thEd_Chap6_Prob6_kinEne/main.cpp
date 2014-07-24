@@ -18,6 +18,7 @@ using namespace std;
 
 
 //Function Prototypes
+void kin(float &mass, float &velo);
 float kinEne (float,float);
 
 
@@ -29,13 +30,8 @@ int main(int argc, char** argv) {
           velo,         //Velocity (meters per second)
         objMass;        //Calculated Kinetic Velocity 
     
-    //User Enter Mass of Object 
-    cout<<"Enter Mass of Object";
-    cin>>mass;
-    
-    //User Enter Velocity of Object 
-    cout<<"Enter Velocity of Object";
-    cin>>velo;
+    //Call Reference Fuction For values Mass & Velocity
+    kin(mass,velo);
     
     //Call Kinetic Energy Function 
     objMass=kinEne(mass,velo);
@@ -44,6 +40,18 @@ int main(int argc, char** argv) {
     cout<<"Kinetic Energy Produced Is: "<<objMass<<endl;
 
     return 0;
+}
+//Reference Function For Mass & Velocity
+//&mass = mass  &velo= velocity
+void kin(float &mass, float &velo)
+{
+  //User Enter Mass of Object 
+    cout<<"Enter Mass of Object";
+    cin>>mass;
+    
+    //User Enter Velocity of Object 
+    cout<<"Enter Velocity of Object";
+    cin>>velo;  
 }
 //Kinetic Energy Function
 //Formula Used to Equate Kinetin Energy

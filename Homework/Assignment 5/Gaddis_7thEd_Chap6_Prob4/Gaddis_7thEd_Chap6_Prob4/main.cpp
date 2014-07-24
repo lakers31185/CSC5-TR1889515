@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Tony Reyes
  * July, 2 2014
- * Purpose: Gaddis 7thEd Chap6 Prob5 Winning Division
+ * Purpose: Gaddis 7thEd Chap6 Prob4 Safe Driving Area
  */
 
 

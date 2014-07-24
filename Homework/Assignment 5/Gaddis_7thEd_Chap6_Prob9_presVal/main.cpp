@@ -16,27 +16,46 @@ using namespace std;
 //Global Constants
 
 //Function Prototypes
-int present (int,int,int);
+void disp(float &fut, float &ann, float &num);
+float present (float,float,float);
 //Execution Begins Here!
 int main(int argc, char** argv){
     
-    //Declare Variables & Initialize Entries
+    //Declare Variables
     //Input
-    float presVal, futVal, annRate, numYear;
-     cout<<setprecision(2)<<fixed;
-    cout<<"How Much You Want in Account?";
-    cin>>futVal;
-    cout<<"What is the Annual Interest Rate?";
-    cin>>annRate;
-    cout<<"Number of Years $ Sits in Account?";
-    cin>>numYear;
+    float presVal,              //Amount You Need To Deposit
+         futVal=0,              //What you want in Account?
+        annRate=0,              //Annual Interest Rate
+        numYear=0;              //Sit on Money (Years)
     
+    //Set Precision For Dollar Amount
+    cout<<setprecision(2)<<fixed;
+    
+    //Call Reference Function For Rate, Future Value, # Years
+    disp(futVal,annRate,numYear);
+    
+    //Call Function Deposit Amount
     presVal=present(futVal,annRate,numYear);
+    //Display Function Output of Deposit Amount
     cout<<"Amount You Need To Deposit Is: ($) "<<presVal<<endl;
     return 0;
 }
-int present (int fut ,int rate,int years)
+//Reference Function For Future Value, Annual Rate, # Years Sitting
+//fut= Future Value ann= Annual Rate num= Sitting Years
+void disp(float &fut, float &ann, float &num)
 {
+   cout<<"How Much You Want in Account?";
+    cin>>fut;
+    cout<<"What is the Annual Interest Rate?";
+    cin>>ann;
+    cout<<"Number of Years $ Sits in Account?";
+    cin>>num;
+}
+//Function For Deposit Amount 
+//Formula Equates Future Value
+float present (float fut ,float rate,float years)
+{
+    //Return Future Value Formula
     return fut/pow(1+rate,years);
 }
 
