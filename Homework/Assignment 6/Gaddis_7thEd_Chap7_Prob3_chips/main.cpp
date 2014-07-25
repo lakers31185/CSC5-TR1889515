@@ -33,32 +33,52 @@ int main(int argc, char** argv){
       salsa[3]="medium";
       salsa[4]="hot";
       
-      for(int count=0;count<5;count++)
-      {
-      
+      for(int count=0;count<1;count++)
       for ( int i = 0; i < 1; i++ ) 
-      {
-           //For-Loop for Biggest Number
+      { 
+  
+        cout << "Enter value " << i << ": "<<salsa[0]<<endl;;
+        cin >> values[i];
+        cout << "Enter value " << i << ": "<<salsa[1]<<endl;;
+        cin >> values[i];
+        cout << "Enter value " << i << ": "<<salsa[2]<<endl;;
+        cin >> values[i];
+        cout << "Enter value " << i << ": "<<salsa[3]<<endl;;
+        cin >> values[i];
+        cout << "Enter value " << i << ": "<<salsa[4]<<endl;;
+        cin >> values[i];
+        
+        }
+      
+        //Assign Element to be Biggest or Smallest
+        big=small=values[0]; 
+     //For-Loop for Biggest Number
     for (int i = 0; i < 1; i++) 
     {
-          
-        cout << "Enter value " << i << ": "<<salsa[count]<<";";
-        cin >> values[i];
-         
-     }
-    //Assign Element to be Biggest or Smallest
-        big=small=values[0];
-     if(values[i]<big)
+        //Compares Biggest Value with Current Element
+        if(values[i]>big)
         {
            big=values[i];
         }
-     }
+    }
+    //For-Loop for Smallest Number
+    for (int i = 0; i < 1; i++) 
+    {
+        //Compares Small Value with Current Element
+        if(values[i]<small) 
+        {
+           small=values[i];
+        }
+    }    
+    for (int i=0;i<1;i++ )
+    {
+        total+=values[i];
+    }
+    
+     //Print Output of Biggest & Smallest Value
+    cout << "The Biggest Value is " << big << endl;
+    cout << "The Smallest Value is " << small << endl; 
+    cout << "The Total Value is " << total << endl;
       
-      }
-      
-     
-        
-        cout << "The Biggest Value is " << big << endl;
-       
-      return 0;
+    return 0;
 }
