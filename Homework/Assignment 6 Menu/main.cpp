@@ -9,6 +9,7 @@
 #include <ctime>
 #include <iomanip>
 #include <cmath>
+#include <vector>
 using namespace std;
 
 //Global Constants
@@ -20,6 +21,7 @@ void def(int);
 void problem1();
 void problem2();
 void problem3();
+void problem4();
 //Execution begins here
 int main(int argv,char *argc[]){
     int inN;
@@ -30,9 +32,10 @@ int main(int argv,char *argc[]){
         case 1: problem1();break;
         case 2: problem2();break;
         case 3: problem3();break;
+        case 4: problem4();break;
         default:;
         };
-    }while(inN<11);
+    }while(inN<5);
     return 0;
 }
 
@@ -41,7 +44,8 @@ void Menu(){
     cout<<"Type 1 for problem 1"<<endl;
     cout<<"Type 2 for problem 2"<<endl;
     cout<<"Type 3 for problem 3"<<endl;
-     cout<<"Type 4 to exit \n"<<endl;
+    cout<<"Type 4 for problem 4"<<endl;
+     cout<<"Type 5 to exit \n"<<endl;
 }
 
 //Choose problem number function
@@ -138,7 +142,7 @@ void problem1(){
     cout << "The Total Value is " << total << endl;
     cout << "The Average Value is " << aver << endl;       
     }
- //Solution to problem 1
+ //Solution to problem 3
 void problem3(){  
     
     //Declare Array of Valid Numbers
@@ -168,7 +172,51 @@ void problem3(){
     }
     //If Not Found Display Number Is Invalid
     if (!found)cout<<"Invalid Input!"<<endl;
-
-
 }
-
+//Solution to problem 4
+void problem4(){
+   int searcV(vector<int> vect, int value );
+    //Declare Variables
+    //Inputs
+    int num;                //User Lottery Numbers
+    //Outputs 
+    int found=0;            //Call Function Variable
+  
+    //Vector Size 
+    vector<int> lotto(3);
+    
+    //Index & Elements of Vector
+    lotto[0]=13579;
+    lotto[1]=62483;
+    lotto[2]=26791;
+    
+    //Prompt User For His Lottery Numbers
+    cout<<"Enter Lotto Numbers: ";
+    cin>>num;
+    
+   //Call Function Lottery Search
+    found = searcV(lotto,num);
+    
+    //Set Parameter For Win or Loss & Display Output
+    if (found>-1)
+        cout<<"You win"<<endl;
+    else
+        cout<<"Sorry Try Again"<<endl;
+ 
+}
+//Exit Comment
+void def(int inN){
+    cout<<"You typed "<<inN<<" to exit the program"<<endl;
+}
+//Function for Lottery Search 
+//Match User Lottery Numbers With Winners
+//vector = lottery winners   value = User Numbers
+int searcV(vector<int> vect, int value )
+{
+    //Match User Numbers with ALL Index and its Elements
+    for (int index = 0; index < vect.size();++index )
+        if (vect[index]==value)
+            return index;
+    //Return -1 if Winner
+    return -1;
+}

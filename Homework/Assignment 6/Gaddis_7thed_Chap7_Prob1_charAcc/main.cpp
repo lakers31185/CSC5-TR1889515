@@ -38,7 +38,7 @@ int main(int argc, char** argv){
         //Compare Index To User Input 
         if(pin==array[index])
         {
-        //If True Number is Valid
+        //If True; Number is Valid
         found=true;
         //Display Output of Valid Number
         cout<<"Number Is Valid";
