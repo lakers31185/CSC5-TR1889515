@@ -34,7 +34,7 @@ int main(int argc, char** argv){
     lotto[2]=26791;
     
     //Prompt User For His Lottery Numbers
-    cout<<"Enter Lotto Numbers: ";
+    cout<<"Enter 5 Lotto Numbers: ";
     cin>>num;
     
    //Call Function Lottery Search

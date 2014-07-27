@@ -22,6 +22,7 @@ void problem1();
 void problem2();
 void problem3();
 void problem4();
+void problem5();
 //Execution begins here
 int main(int argv,char *argc[]){
     int inN;
@@ -33,9 +34,10 @@ int main(int argv,char *argc[]){
         case 2: problem2();break;
         case 3: problem3();break;
         case 4: problem4();break;
+        case 5: problem5();break;
         default:;
         };
-    }while(inN<5);
+    }while(inN<6);
     return 0;
 }
 
@@ -45,7 +47,8 @@ void Menu(){
     cout<<"Type 2 for problem 2"<<endl;
     cout<<"Type 3 for problem 3"<<endl;
     cout<<"Type 4 for problem 4"<<endl;
-     cout<<"Type 5 to exit \n"<<endl;
+    cout<<"Type 5 for problem 5"<<endl;
+     cout<<"Type 6 to exit \n"<<endl;
 }
 
 //Choose problem number function
@@ -204,6 +207,57 @@ void problem4(){
         cout<<"Sorry Try Again"<<endl;
  
 }
+//Solution to problem 5
+void problem5(){  
+//Declare Variables
+    //Inputs
+    int lotto;          //Enter your Lotto Numbers
+    
+    //Array of Winning Numbers
+    int array[]={13579,26791,26792,33445,55555,62483,77777,79422,85647,93121};
+    //First Index 0
+    int first=0;
+    //Last Index 9
+    int last=9;
+    //Middle Index 5
+    int middle=0;
+    //Boolean False if Not Found
+    bool found = false;
+    
+    //User Enter lotto Numbers
+    cout<<"Enter Your 5 Lotto Numbers: ";
+    cin>>lotto;
+    
+    //While First <= Last (True)
+    while ( first <= last && !found)
+    {
+       //First + Last Elements / 2
+        middle=(first + last) / 2;
+       
+       if (lotto>array[middle])
+       {
+           //Element First = Middle +1
+           first = middle +1;
+       }
+       else if (lotto< array[middle])
+       {
+           //Element Last = Middle - 1
+           last = middle -1;
+       }
+       else 
+       {
+         //Number Found In While Loop
+           cout<<"Valid Numbers - You Win!"<<endl;
+         found = true;
+       }
+    }
+    //Not Found (False)
+    if (!found)
+    {
+        //Number Not Found 
+        cout <<"Numbers Not Valid"<<endl;
+    }
+}  
 //Exit Comment
 void def(int inN){
     cout<<"You typed "<<inN<<" to exit the program"<<endl;
