@@ -18,51 +18,20 @@ using namespace std;
 
 //Execution Begins Here!
 int main(int argc, char** argv){
-    //Declare Variables
-     int values[ 12 ];    //Declares array and how many elements
-      int small,big,total=0,aver;      //Declares Biggest & Smallest Integer
-      
-      //Counts to 12 and prompts user for value and stores it
+   //Declare Array Size
+    const int SIZE =12; 
+    int value [SIZE];
+    int sum=0;
     
-      for ( int i = 0; i < 12; i++ ) 
+   
+    //For Loop of Total of Elements in Array
+    for (int i=0; i<SIZE; i++)
     {
-        cout << "Enter value " << i << ": ";
-        cin >> values[i];
+        cout<<"Enter 12 Months"<<i<<":";
+        cin>>value[SIZE];
+        sum+=value[SIZE];
     }
-        //Assign Element to be Biggest or Smallest
-        big=small=values[0]; 
-     //For-Loop for Biggest Number
-    for (int i = 0; i < 12; i++) 
-    {
-        //Compares Biggest Value with Current Element
-        if(values[i]>big)
-        {
-           big=values[i];
-        }
-    }
-    //For-Loop for Smallest Number
-    for (int i = 0; i < 12; i++) 
-    {
-        //Compares Small Value with Current Element
-        if(values[i]<small) 
-        {
-           small=values[i];
-        }
-    }    
-    for (int i=0;i<12;i++ )
-    {
-        total+=values[i];
-    }
-    for (int i=0;i<12;i++ )
-    {
-        total+=values[i];
-        aver=total/12;
-        
-    }
-     //Print Output of Biggest & Smallest Value
-    cout << "The Biggest Value is " << big << endl;
-    cout << "The Smallest Value is " << small << endl; 
-    cout << "The Total Value is " << total << endl;
-    cout << "The Average Value is " << aver << endl;       
+    cout <<"The Total Rainfall Is: "<<sum<<endl;
+   
     return 0;
 }
