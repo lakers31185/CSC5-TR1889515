@@ -358,7 +358,7 @@ int main(int argc, char** argv){
             }
         }
         default:{
-        cout<<"Exit?"<<endl;
+        
         loop=false;
         break;
         }
