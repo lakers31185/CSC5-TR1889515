@@ -8,6 +8,8 @@
 //System Library
 #include <iostream>
 #include <iomanip>
+#include <cstring>
+#include<string>
 using namespace std;
 
 //User Defined Libraries
@@ -18,20 +20,43 @@ using namespace std;
 
 //Execution Begins Here!
 int main(int argc, char** argv){
-   //Declare Array Size
+  
+    //Declare Array Size (12 Months)
     const int SIZE =12; 
-    int value [SIZE];
-    int sum=0;
+   string months[SIZE]={"JAN","FEB","MAR","APR","MAY","June","July","AUg","Sep"
+   "oct","nov","dec"};
+       //Declare Variables
+    int min,max;        //Find Min / Max 
+    int value [SIZE];   //Enter Months Total Rainfall
+    int sum=0;          //Initialize Sum to Zero
+
+    //Initialize Min / Max
+    max=value[SIZE];
+    min=value[SIZE];
     
-   
     //For Loop of Total of Elements in Array
-    for (int i=0; i<SIZE; i++)
+    for (int i=1; i<SIZE; i++)
     {
-        cout<<"Enter 12 Months"<<i<<":";
+        //Enter Months total Rainfall
+        cout<<"Enter Months Total Rainfall (1-12): "<<":";
         cin>>value[SIZE];
+        //Calculate Sum of Total Rainfall
         sum+=value[SIZE];
+        
+        //Set Parameters For Min / Max
+        if (value[SIZE]>max)
+        {
+            max=value[SIZE];
+        }
+        else
+        {
+            min=value[SIZE];
+        }
     }
-    cout <<"The Total Rainfall Is: "<<sum<<endl;
-   
+    //Display Outputs 
+    cout <<"The Total Rainfall For The Year Is: "<<sum<<endl;
+    cout<<"The Average For the Year Is: "<<sum/12<<endl;
+    cout <<"The Month  with Minimum Total Rainfall Is: "<<min<<endl;
+    cout<<"The Month  with Maximum Total Rainfall Is: "<<max<<endl;
     return 0;
 }

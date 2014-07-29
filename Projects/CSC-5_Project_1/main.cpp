@@ -10,6 +10,7 @@
 #include <string>
 #include<ctime>
 #include<cstdlib>
+#include<fstream>
 using namespace std;
 
 //User Libraries
@@ -22,18 +23,32 @@ int userLocation ();
 
 //Execution Starts Here!
 int main(int argc, char** argv){
-
+     string name; 
+      char count[3]; 
+    int sum=0;
     //Display Introduction of Game
     intro();
     cout<<endl;
 
     //General Menu Format
     bool loop=true;
+     for (int win =0;win<5;win++)
+     {
     do{
+       
+   
+    //Prompt User for Name
+    cout<<"what is Your First Name:  ";
+    cin>>name;
+
+    //What is your Country of Nationalization?
+    cout<<"what is Your Country of Nationalization?: (XXX)  ";
+    cin>>count;
+    
     //Display Option To Play as Keeper or Scorer
     cout<<"Type 1 to Play as Goal Keeper: "<<endl;
     cout<<"Type 2 to Play as  Goal Scorer: "<<endl;
-    cout<<"Type Anything Else to Quit Game"<<endl;
+
 
     //Read the choice
     char choice;
@@ -50,19 +65,12 @@ int main(int argc, char** argv){
     
     //Declare Variables & Initialize Entries
     //Inputs
-    string name;                     //Enter Name of User
+                                       //Enter Name of User
     unsigned short keep,shot;        //Selection of Scorer or Keeper
-    char count[3];                  //Enter 3 Character Nation  EX:(usa)
-    short win;                      //1 point for win
+                                      //Enter 3 Character Nation  EX:(usa)
+    short wins;                      //1 point for win
+    float sum;
     
-    //Prompt User for Name
-    cout<<"what is Your First Name:  ";
-    cin>>name;
-
-    //What is your Country of Nationalization?
-    cout<<"what is Your Country of Nationalization?: (XXX)  ";
-    cin>>count;
-
     //Set Random Seed
     srand(static_cast<unsigned int>(time(0)));
 
@@ -73,20 +81,19 @@ int main(int argc, char** argv){
     shot=userLocation();
 
     //Set Up Parameters of Goal or No Goal
+    for (int win=0;win<1;win++)
+    {
     if (shot==1){
         if(keep==1){
-      cout<<"________________"<<endl
-        <<" |                |"<<endl
-        <<" |    o           |"<<endl
-        <<" |   _|/_         |"<<endl 
-        <<" |   /            |"<<endl 
-        <<"     o            "<<endl
-        <<"       |           "<<endl    
-        <<"        o          "<<endl
-        <<"         |          "<<endl 
-        <<"You Blocked The Shot!"<<endl;
-        win++;
-        cout<<win<<":Point For:"<<name<<":From:"<<count<<endl;
+      
+          fstream newfile;
+          newfile.open("block.txt");
+          newfile<<"You Blocked The Shot!";
+          newfile.close();
+      
+        wins=1;
+        cout<<":Point For:"<<name<<":From:"<<count<<endl;
+        cout<<"This Is Round Number: "<<win<<endl;
         }             
         else if (keep==2){
         cout<<" __________________"<<endl
@@ -100,6 +107,7 @@ int main(int argc, char** argv){
             <<"        |          "<<endl 
             <<"Goal..They Scored.."<<endl;
             cout<<"Your Opponent Gets Point"<<endl;
+            wins=1;
         }
         else{
         cout<<" __________________"<<endl
@@ -112,6 +120,7 @@ int main(int argc, char** argv){
             <<"            o      "<<endl
             <<"Goal..They Scored.."<<endl;
             cout<<"Your Opponent Gets Point"<<endl;
+             wins=1;
         }
     }  
     else if (shot==2){
@@ -127,6 +136,7 @@ int main(int argc, char** argv){
             <<"          |         "<<endl 
             <<"Goal..They Scored.."<<endl;
             cout<<"Your Opponent Gets Point"<<endl;
+             wins=1;
         }
         else if(keep==2){
         cout<<"  __________________"<<endl
@@ -139,8 +149,9 @@ int main(int argc, char** argv){
             <<"          o         "<<endl
             <<"         |          "<<endl 
             <<"You Blocked The Shot!"<<endl;
-            win++;
-            cout<<win<<":Point For:"<<name<<":From:"<<count<<endl;
+           wins=1;
+            cout<<":Point For:"<<name<<":From:"<<count<<endl;
+             cout<<"This Is Round Number: "<<win<<endl;
         } 
         else{
         cout<<" _________________"<<endl
@@ -153,8 +164,9 @@ int main(int argc, char** argv){
             <<"             o    "<<endl
             <<"            |     "<<endl 
             <<" THEY MISS!!!!     "<<endl;
-            win++;
-            cout<<win<<":Point For:"<<name<<":From:"<<count<<endl;
+           wins=1;
+            cout<<":Point For:"<<name<<":From:"<<count<<endl;
+             cout<<"This Is Round Number: "<<win<<endl;
         }
     }
     else if (shot==3)
@@ -170,6 +182,7 @@ int main(int argc, char** argv){
             <<"           |           "<<endl 
             <<"Goal..They Scored..    "<<endl;
             cout<<"Your Opponent Gets Point"<<endl;
+             wins=1;
     }
     else if (keep==2){
         cout<<"__________________"<<endl
@@ -183,6 +196,7 @@ int main(int argc, char** argv){
         <<"           |          "<<endl 
         <<"Goal..They Scored..   "<<endl;
         cout<<"Your Opponent Gets Point"<<endl;
+         wins=1;
         }
         else{
         cout<<" __________________"<<endl
@@ -195,9 +209,14 @@ int main(int argc, char** argv){
             <<"                 o   "<<endl
             <<"                |    "<<endl
             <<"You Blocked The Shot!"<<endl;
-            win++;
-            cout<<win<<":Point For:"<<name<<":From:"<<count<<endl;
+            wins=1;
+            cout<<":Point For:"<<name<<":From:"<<count<<endl;
+             cout<<"This Is Round Number: "<<win<<endl;
     }
+    sum+=win;
+    cout<<""<<sum<<endl;;
+    }
+    
             cout<<endl;
     }
     case'2':{
@@ -345,6 +364,9 @@ int main(int argc, char** argv){
         }
         };
     }while(loop);//Upper do-while
+    sum+=win;
+    cout<<"You Have: "<<sum<<endl;
+     }
     return 0;
     }
 void intro(){
