@@ -12,7 +12,16 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>centerCenter.txt</itemPath>
+      <itemPath>centerLeft.txt</itemPath>
+      <itemPath>centerRight.txt</itemPath>
+      <itemPath>leftCenter.txt</itemPath>
+      <itemPath>leftLeft.txt</itemPath>
+      <itemPath>leftRight.txt</itemPath>
       <itemPath>main.cpp</itemPath>
+      <itemPath>rightCenter.txt</itemPath>
+      <itemPath>rightLeft.txt</itemPath>
+      <itemPath>rightRight.txt</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -36,7 +45,25 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="centerCenter.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="centerLeft.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="centerRight.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="leftCenter.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="leftLeft.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="leftRight.txt" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="rightCenter.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="rightLeft.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="rightRight.txt" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -59,7 +86,25 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="centerCenter.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="centerLeft.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="centerRight.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="leftCenter.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="leftLeft.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="leftRight.txt" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="rightCenter.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="rightLeft.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="rightRight.txt" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

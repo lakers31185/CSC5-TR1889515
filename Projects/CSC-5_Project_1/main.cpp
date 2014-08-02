@@ -25,11 +25,22 @@ int userLocation ();
 int main(int argc, char** argv){
      string name; 
       char count[3]; 
-    int sum=0;
+  
+      srand(time(0));
+         short choose = rand()%5;
+         string wordList[5]={"Mexico","Canada","Italy","Germany","Spain"};
+         string word = wordList[choose];
+         int sum=0;
     //Display Introduction of Game
     intro();
     cout<<endl;
+ //Prompt User for Name
+    cout<<"what is Your First Name:  ";
+    cin>>name;
 
+    //What is your Country of Nationalization?
+    cout<<"what is Your Country of Nationalization?: (XXX)  ";
+    cin>>count;
     //General Menu Format
     bool loop=true;
      for (int win =0;win<5;win++)
@@ -37,14 +48,10 @@ int main(int argc, char** argv){
     do{
        
    
-    //Prompt User for Name
-    cout<<"what is Your First Name:  ";
-    cin>>name;
-
-    //What is your Country of Nationalization?
-    cout<<"what is Your Country of Nationalization?: (XXX)  ";
-    cin>>count;
-    
+   
+     cout<<count<<"'VS'"<<word<<endl;
+    //Title of Match 
+     
     //Display Option To Play as Keeper or Scorer
     cout<<"Type 1 to Play as Goal Keeper: "<<endl;
     cout<<"Type 2 to Play as  Goal Scorer: "<<endl;
@@ -58,7 +65,8 @@ int main(int argc, char** argv){
 
     //Play as Keeper
     case'1':{
-
+    
+    
     //Instruct User About Scenario
     cout<<"Block the Shot"<<endl;
     cout<<"________________"<<endl;
@@ -79,6 +87,10 @@ int main(int argc, char** argv){
     
     //Use Function for User Selection
     shot=userLocation();
+    
+    cout<<count<<"VS"<<word<<endl;
+    //Title of Match 
+   
 
     //Set Up Parameters of Goal or No Goal
     for (int win=0;win<1;win++)
@@ -86,7 +98,7 @@ int main(int argc, char** argv){
     if (shot==1){
         if(keep==1){
       
-          fstream newfile;
+          ifstream newfile;
           newfile.open("block.txt");
           newfile<<"You Blocked The Shot!";
           newfile.close();
@@ -107,7 +119,7 @@ int main(int argc, char** argv){
             <<"        |          "<<endl 
             <<"Goal..They Scored.."<<endl;
             cout<<"Your Opponent Gets Point"<<endl;
-            wins=1;
+            wins=0;
         }
         else{
         cout<<" __________________"<<endl
@@ -120,7 +132,7 @@ int main(int argc, char** argv){
             <<"            o      "<<endl
             <<"Goal..They Scored.."<<endl;
             cout<<"Your Opponent Gets Point"<<endl;
-             wins=1;
+             wins=0;
         }
     }  
     else if (shot==2){
@@ -136,7 +148,7 @@ int main(int argc, char** argv){
             <<"          |         "<<endl 
             <<"Goal..They Scored.."<<endl;
             cout<<"Your Opponent Gets Point"<<endl;
-             wins=1;
+             wins=0;
         }
         else if(keep==2){
         cout<<"  __________________"<<endl
@@ -182,7 +194,7 @@ int main(int argc, char** argv){
             <<"           |           "<<endl 
             <<"Goal..They Scored..    "<<endl;
             cout<<"Your Opponent Gets Point"<<endl;
-             wins=1;
+             wins=0;
     }
     else if (keep==2){
         cout<<"__________________"<<endl
@@ -196,7 +208,7 @@ int main(int argc, char** argv){
         <<"           |          "<<endl 
         <<"Goal..They Scored..   "<<endl;
         cout<<"Your Opponent Gets Point"<<endl;
-         wins=1;
+         wins=0;
         }
         else{
         cout<<" __________________"<<endl
@@ -213,8 +225,7 @@ int main(int argc, char** argv){
             cout<<":Point For:"<<name<<":From:"<<count<<endl;
              cout<<"This Is Round Number: "<<win<<endl;
     }
-    sum+=win;
-    cout<<""<<sum<<endl;;
+    
     }
     
             cout<<endl;
@@ -253,6 +264,7 @@ int main(int argc, char** argv){
             <<"         |         "<<endl 
             <<"They Blocked Your Shot..   "<<endl;
             cout<<"Your Opponent Gets Point"<<endl;
+            win=0;
             }             
         else if (keep==2){
         cout<<"__________________"<<endl
@@ -265,6 +277,7 @@ int main(int argc, char** argv){
             <<"        o           "<<endl
             <<"         |          "<<endl 
             <<" You Scored For Your Country!"<<endl;
+        win=1;
             }
         else{
         cout<<" __________________"<<endl
@@ -277,6 +290,7 @@ int main(int argc, char** argv){
             <<"        o          "<<endl
             <<"         |          "<<endl 
             <<" You Scored For Your Country!"<<endl;
+        win=1;
             }
         }  
     else if (shot==2){
@@ -291,6 +305,7 @@ int main(int argc, char** argv){
             <<"          o         "<<endl
             <<"         |          "<<endl 
             <<" You Scored For Your Country!"<<endl;
+        win=1;
             }
         else if(keep==2){
         cout<<"  __________________"<<endl
@@ -303,7 +318,8 @@ int main(int argc, char** argv){
             <<"          o         "<<endl
             <<"         |          "<<endl 
             <<"They Blocked Your Shot..   "<<endl;
-            cout<<"Your Opponent Gets Point"<<endl;   
+            cout<<"Your Opponent Gets Point"<<endl;
+            win=0;
             } 
         else{
         cout<<" __________________"<<endl
@@ -316,6 +332,7 @@ int main(int argc, char** argv){
             <<"          o         "<<endl
             <<"         |          "<<endl 
             <<" You Scored For Your Country!"<<endl;
+        win=1;
             }
         } 
     else if (shot==3)
@@ -330,6 +347,7 @@ int main(int argc, char** argv){
             <<"             o    "<<endl
             <<"            |     "<<endl
             <<" You Scored For Your Country!"<<endl;
+        win=1;
             }
         else if (keep==2){
         cout<<"  __________________"<<endl
@@ -342,6 +360,7 @@ int main(int argc, char** argv){
             <<"             o    "<<endl
             <<"            |     "<<endl
             <<" You Scored For Your Country!"<<endl;
+        win=1;
             }
         else{
         cout<<"____________________"<<endl
@@ -355,8 +374,17 @@ int main(int argc, char** argv){
             <<"            |      "<<endl
             <<"They Blocked Your Shot.."<<endl;
             cout<<"Your Opponent Gets Point"<<endl;
+            win=0;
             }
         }
+    if (win==1)
+    {
+        cout<<"You Win Round"<<endl;
+    }
+    else if (win==0)
+    {
+        cout<<"You Lose Round"<<endl;
+    }
         default:{
         
         loop=false;
